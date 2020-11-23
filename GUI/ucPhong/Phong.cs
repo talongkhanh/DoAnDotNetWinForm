@@ -10,42 +10,41 @@ using System.Windows.Forms;
 using GUI.ucHeThong;
 using MetroFramework.Controls;
 
-namespace GUI.ucNhanVien
+namespace GUI.ucPhong
 {
-    public partial class templateNhanVien : UserControl
+    public partial class Phong : UserControl
     {
-        public templateNhanVien()
+        public Phong()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void btnTroVe_Click(object sender, EventArgs e)
         {
-            // thoat man hinh nhan vien
             ucManHinhChinh ucManHinhChinh = new ucManHinhChinh();
             ucManHinhChinh.Dock = DockStyle.Fill;
 
             frmMain.frmMain_.MetroContainer.Controls.Add(ucManHinhChinh);
             frmMain.frmMain_.MetroContainer.Controls["ucManHinhChinh"].BringToFront();
 
-            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<templateNhanVien>())
+            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<Phong>())
             {
                 frmMain.frmMain_.MetroContainer.Controls.Remove(item);
             }
         }
 
-        public void btnQlNhanVien_MouseHover(object sender, EventArgs e)
+        private void btnQL_MouseHover(object sender, EventArgs e)
         {
             MetroPanel pnl = (MetroPanel)sender;
             pnl.CustomBackground = true;
             pnl.BackColor = Color.FromArgb(52, 73, 94);
         }
 
-        public void btnQlNhanVien_MouseLeave(object sender, EventArgs e)
+        private void btnQL_MouseLeave(object sender, EventArgs e)
         {
             MetroPanel pnl = (MetroPanel)sender;
             pnl.CustomBackground = true;
-            
+
             // keep background color active button
             if (pnl.Tag.ToString() == "1")
             {
@@ -56,36 +55,35 @@ namespace GUI.ucNhanVien
                 pnl.BackColor = Color.FromArgb(44, 62, 80);
             }
         }
-
-        public void metroLabel_MouseHover(object sender, EventArgs e)
+        private void metroLabel_MouseHover(object sender, EventArgs e)
         {
             MetroLabel mlb = (MetroLabel)sender;
-            btnQlNhanVien_MouseHover((MetroPanel)mlb.Parent, e);
+            btnQL_MouseHover((MetroPanel)mlb.Parent, e);
         }
 
-        public void metroLabel_MouseLeave(object sender, EventArgs e)
+        private void metroLabel_MouseLeave(object sender, EventArgs e)
         {
             MetroLabel mlb = (MetroLabel)sender;
             MetroPanel pnl = (MetroPanel)mlb.Parent;
-            btnQlNhanVien_MouseLeave(pnl, e);
+            btnQL_MouseLeave(pnl, e);
         }
 
-        public void pictureBox_MouseHover(object sender, EventArgs e)
+        private void pictureBox_MouseHover(object sender, EventArgs e)
         {
             PictureBox ptb = (PictureBox)sender;
-            btnQlNhanVien_MouseHover((MetroPanel)ptb.Parent, e);
+            btnQL_MouseHover((MetroPanel)ptb.Parent, e);
         }
 
-        public void pictureBox_MouseLeave(object sender, EventArgs e)
+        private void pictureBox_MouseLeave(object sender, EventArgs e)
         {
             PictureBox ptb = (PictureBox)sender;
-            btnQlNhanVien_MouseLeave((MetroPanel)ptb.Parent, e);
+            btnQL_MouseLeave((MetroPanel)ptb.Parent, e);
         }
-        
+
         void HienThiNoiDung(string name)
         {
             // Delete content
-            
+
             foreach (var item in mpanelQlNvContent.Controls.OfType<UserControl>())
             {
                 mpanelQlNvContent.Controls.Remove(item);
@@ -95,37 +93,28 @@ namespace GUI.ucNhanVien
 
             switch (name)
             {
-                case "QuanLyNhanVien":
+                case "QuanLyLoaiPhong":
                     {
-                        QuanLyNhanVien QuanLyNhanVien = new QuanLyNhanVien();
-                        QuanLyNhanVien.Dock = DockStyle.Fill;
-                        mpanelQlNvContent.Controls.Add(QuanLyNhanVien);
-                        mpanelQlNvContent.Controls["QuanLyNhanVien"].BringToFront();
+                        QuanLyLoaiPhong QuanLyLoaiPhong = new QuanLyLoaiPhong();
+                        QuanLyLoaiPhong.Dock = DockStyle.Fill;
+                        mpanelQlNvContent.Controls.Add(QuanLyLoaiPhong);
+                        mpanelQlNvContent.Controls["QuanLyLoaiPhong"].BringToFront();
 
                     }
                     break;
-                case "QuanLyChucVu":
+                case "QuanLyPhongThue":
                     {
-                        QuanLyChucVu QuanLyChucVu = new QuanLyChucVu();
-                        QuanLyChucVu.Dock = DockStyle.Fill;
-                        mpanelQlNvContent.Controls.Add(QuanLyChucVu);
-                        mpanelQlNvContent.Controls["QuanLyChucVu"].BringToFront();
-
-                    }
-                    break;
-                case "QuanLyPhongBan":
-                    {
-                        QuanLyPhongBan QuanLyPhongBan = new QuanLyPhongBan();
-                        QuanLyPhongBan.Dock = DockStyle.Fill;
-                        mpanelQlNvContent.Controls.Add(QuanLyPhongBan);
-                        mpanelQlNvContent.Controls["QuanLyPhongBan"].BringToFront();
+                        QuanLyPhongThue QuanLyPhongThue = new QuanLyPhongThue();
+                        QuanLyPhongThue.Dock = DockStyle.Fill;
+                        mpanelQlNvContent.Controls.Add(QuanLyPhongThue);
+                        mpanelQlNvContent.Controls["QuanLyPhongThue"].BringToFront();
 
                     }
                     break;
             }
         }
 
-        public void btnQl_Click(object sender, EventArgs e)
+        private void btnQL_Click(object sender, EventArgs e)
         {
             MetroPanel pnl = (MetroPanel)sender;
             HienThiNoiDung(pnl.AccessibleName.ToString());
@@ -141,23 +130,20 @@ namespace GUI.ucNhanVien
             pnl.BackColor = Color.FromArgb(52, 73, 94);
         }
 
-        public void metroLabel_Click(object sender, EventArgs e)
+
+        private void metroLabel_Click(object sender, EventArgs e)
         {
             MetroLabel mlb = (MetroLabel)sender;
             MetroPanel pnl = (MetroPanel)mlb.Parent;
-            btnQl_Click(pnl, e);
+            btnQL_Click(pnl, e);
         }
 
-        public void pictureBox_Click(object sender, EventArgs e)
+        private void pictureBox_Click(object sender, EventArgs e)
         {
             PictureBox ptb = (PictureBox)sender;
             MetroPanel pnl = (MetroPanel)ptb.Parent;
-            btnQl_Click(pnl, e);
+            btnQL_Click(pnl, e);
         }
 
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

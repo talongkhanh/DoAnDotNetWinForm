@@ -7,31 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUI.ucHeThong;
+using GUI.ucDichVu;
 using MetroFramework.Controls;
 
-namespace GUI.ucHeThong
+namespace GUI.ucDichVu
 {
-    public partial class HeThong : UserControl
+    public partial class DichVu : UserControl
     {
-        public HeThong()
+        public DichVu()
         {
             InitializeComponent();
         }
 
-        private void btn_Click(object sender, EventArgs e)
+        private void mpanel_Paint(object sender, PaintEventArgs e)
         {
-            MetroPanel pnl = (MetroPanel)sender;
-            HienThiNoiDung(pnl.AccessibleName.ToString());
-            // remove all btn color
-            foreach (MetroPanel item in mPanelMenu.Controls.OfType<MetroPanel>())
+
+        }
+
+        private void btnTroVe_Click(object sender, EventArgs e)
+        {
+            ucManHinhChinh ucManHinhChinh = new ucManHinhChinh();
+            ucManHinhChinh.Dock = DockStyle.Fill;
+
+            frmMain.frmMain_.MetroContainer.Controls.Add(ucManHinhChinh);
+            frmMain.frmMain_.MetroContainer.Controls["ucManHinhChinh"].BringToFront();
+
+            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<DichVu>())
             {
-                item.Tag = "0";
-                item.BackColor = Color.FromArgb(44, 62, 80);
+                frmMain.frmMain_.MetroContainer.Controls.Remove(item);
             }
-            // click active button
-            pnl.Tag = "1";
-            pnl.CustomBackground = true;
-            pnl.BackColor = Color.FromArgb(52, 73, 94);
         }
 
         private void btn_MouseHover(object sender, EventArgs e)
@@ -57,6 +62,22 @@ namespace GUI.ucHeThong
             }
         }
 
+        private void btn_Click(object sender, EventArgs e)
+        {
+            MetroPanel pnl = (MetroPanel)sender;
+            HienThiNoiDung(pnl.AccessibleName.ToString());
+            // remove all btn color
+            foreach (MetroPanel item in mPanelMenu.Controls.OfType<MetroPanel>())
+            {
+                item.Tag = "0";
+                item.BackColor = Color.FromArgb(44, 62, 80);
+            }
+            // click active button
+            pnl.Tag = "1";
+            pnl.CustomBackground = true;
+            pnl.BackColor = Color.FromArgb(52, 73, 94);
+        }
+
         private void metroLabel_Click(object sender, EventArgs e)
         {
             MetroLabel mlb = (MetroLabel)sender;
@@ -76,7 +97,6 @@ namespace GUI.ucHeThong
             MetroPanel pnl = (MetroPanel)mlb.Parent;
             btn_MouseLeave(pnl, e);
         }
-
 
         private void pictureBox_Click(object sender, EventArgs e)
         {
@@ -100,57 +120,33 @@ namespace GUI.ucHeThong
         {
             // Delete content
 
-            foreach (var item in mPanelHeThong.Controls.OfType<UserControl>())
+            foreach (var item in mpanelQlDvContent.Controls.OfType<UserControl>())
             {
-                mPanelHeThong.Controls.Remove(item);
+                mpanelQlDvContent.Controls.Remove(item);
             }
 
             // Add new content 
 
             switch (name)
             {
-                case "QuanLyTaiKhoan":
+                case "QuanLyDichVu":
                     {
-                        QuanLyTaiKhoan QuanLyTaiKhoan = new QuanLyTaiKhoan();
-                        QuanLyTaiKhoan.Dock = DockStyle.Fill;
-                        mPanelHeThong.Controls.Add(QuanLyTaiKhoan);
-                        mPanelHeThong.Controls["QuanLyTaiKhoan"].BringToFront();
+                        QuanLyDichVu QuanLyDichVu = new QuanLyDichVu();
+                        QuanLyDichVu.Dock = DockStyle.Fill;
+                        mpanelQlDvContent.Controls.Add(QuanLyDichVu);
+                        mpanelQlDvContent.Controls["QuanLyDichVu"].BringToFront();
 
                     }
-                    break; ;
-            }
-        }
+                    break;
+                case "SuDungDichVu":
+                    {
+                        SuDungDichVu SuDungDichVu = new SuDungDichVu();
+                        SuDungDichVu.Dock = DockStyle.Fill;
+                        mpanelQlDvContent.Controls.Add(SuDungDichVu);
+                        mpanelQlDvContent.Controls["SuDungDichVu"].BringToFront();
 
-        private void btnTroVe_Click(object sender, EventArgs e)
-        {
-            ucManHinhChinh ucManHinhChinh = new ucManHinhChinh();
-            ucManHinhChinh.Dock = DockStyle.Fill;
-
-            frmMain.frmMain_.MetroContainer.Controls.Add(ucManHinhChinh);
-            frmMain.frmMain_.MetroContainer.Controls["ucManHinhChinh"].BringToFront();
-
-            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<HeThong>())
-            {
-                frmMain.frmMain_.MetroContainer.Controls.Remove(item);
-            }
-        }
-
-        private void dangxuat(object sender, EventArgs e)
-        {
-            DialogResult ok = new DialogResult();
-            ok = MessageBox.Show("Bạn muốn đăng xuất!", "Chuyển tai khoản", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (ok == DialogResult.OK)
-            {
-                ucDangNhap ucDangNhap = new ucDangNhap();
-                ucDangNhap.Dock = DockStyle.Fill;
-
-                frmMain.frmMain_.MetroContainer.Controls.Add(ucDangNhap);
-                frmMain.frmMain_.MetroContainer.Controls["ucDangNhap"].BringToFront();
-
-                foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<HeThong>())
-                {
-                    frmMain.frmMain_.MetroContainer.Controls.Remove(item);
-                }
+                    }
+                    break;
             }
         }
     }

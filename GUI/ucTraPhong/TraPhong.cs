@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUI.ucHeThong;
 using MetroFramework.Controls;
 
-namespace GUI.ucHeThong
+namespace GUI.ucTraPhong
 {
-    public partial class HeThong : UserControl
+    public partial class TraPhong : UserControl
     {
-        public HeThong()
+        public TraPhong()
         {
             InitializeComponent();
         }
@@ -100,28 +101,28 @@ namespace GUI.ucHeThong
         {
             // Delete content
 
-            foreach (var item in mPanelHeThong.Controls.OfType<UserControl>())
+            foreach (var item in mpanelTraPhong.Controls.OfType<UserControl>())
             {
-                mPanelHeThong.Controls.Remove(item);
+                mpanelTraPhong.Controls.Remove(item);
             }
 
             // Add new content 
 
             switch (name)
             {
-                case "QuanLyTaiKhoan":
+                case "KhachHangTraPhong":
                     {
-                        QuanLyTaiKhoan QuanLyTaiKhoan = new QuanLyTaiKhoan();
-                        QuanLyTaiKhoan.Dock = DockStyle.Fill;
-                        mPanelHeThong.Controls.Add(QuanLyTaiKhoan);
-                        mPanelHeThong.Controls["QuanLyTaiKhoan"].BringToFront();
+                        KhachHangTraPhong KhachHangTraPhong = new KhachHangTraPhong();
+                        KhachHangTraPhong.Dock = DockStyle.Fill;
+                        mpanelTraPhong.Controls.Add(KhachHangTraPhong);
+                        mpanelTraPhong.Controls["KhachHangTraPhong"].BringToFront();
 
                     }
-                    break; ;
+                    break;;
             }
         }
 
-        private void btnTroVe_Click(object sender, EventArgs e)
+        private void btnTroVe_Click_1(object sender, EventArgs e)
         {
             ucManHinhChinh ucManHinhChinh = new ucManHinhChinh();
             ucManHinhChinh.Dock = DockStyle.Fill;
@@ -129,28 +130,9 @@ namespace GUI.ucHeThong
             frmMain.frmMain_.MetroContainer.Controls.Add(ucManHinhChinh);
             frmMain.frmMain_.MetroContainer.Controls["ucManHinhChinh"].BringToFront();
 
-            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<HeThong>())
+            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<TraPhong>())
             {
                 frmMain.frmMain_.MetroContainer.Controls.Remove(item);
-            }
-        }
-
-        private void dangxuat(object sender, EventArgs e)
-        {
-            DialogResult ok = new DialogResult();
-            ok = MessageBox.Show("Bạn muốn đăng xuất!", "Chuyển tai khoản", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (ok == DialogResult.OK)
-            {
-                ucDangNhap ucDangNhap = new ucDangNhap();
-                ucDangNhap.Dock = DockStyle.Fill;
-
-                frmMain.frmMain_.MetroContainer.Controls.Add(ucDangNhap);
-                frmMain.frmMain_.MetroContainer.Controls["ucDangNhap"].BringToFront();
-
-                foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<HeThong>())
-                {
-                    frmMain.frmMain_.MetroContainer.Controls.Remove(item);
-                }
             }
         }
     }

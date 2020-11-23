@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.mPanelDangNhap = new MetroFramework.Controls.MetroPanel();
+            this.btnDangNhap = new MetroFramework.Controls.MetroButton();
             this.txtMatKhau = new MetroFramework.Controls.MetroTextBox();
             this.txtTaiKhoan = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.btnDangNhap = new MetroFramework.Controls.MetroButton();
             this.metroStyleExtender1 = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.mPanelDangNhap.SuspendLayout();
@@ -76,13 +76,24 @@
             this.mPanelDangNhap.VerticalScrollbarHighlightOnWheel = false;
             this.mPanelDangNhap.VerticalScrollbarSize = 10;
             // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDangNhap.Location = new System.Drawing.Point(207, 163);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(123, 35);
+            this.btnDangNhap.Style = MetroFramework.MetroColorStyle.Red;
+            this.btnDangNhap.TabIndex = 6;
+            this.btnDangNhap.Text = "Đăng Nhập";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
             // txtMatKhau
             // 
             this.txtMatKhau.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txtMatKhau.Location = new System.Drawing.Point(207, 104);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new System.Drawing.Size(211, 23);
+            this.txtMatKhau.Size = new System.Drawing.Size(211, 25);
             this.txtMatKhau.TabIndex = 5;
             // 
             // txtTaiKhoan
@@ -91,7 +102,7 @@
             this.txtTaiKhoan.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtTaiKhoan.Location = new System.Drawing.Point(207, 42);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(211, 23);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(211, 25);
             this.txtTaiKhoan.TabIndex = 4;
             // 
             // metroLabel2
@@ -113,16 +124,6 @@
             this.metroLabel1.Size = new System.Drawing.Size(87, 25);
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "Tài Khoản";
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDangNhap.Location = new System.Drawing.Point(207, 163);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(123, 35);
-            this.btnDangNhap.TabIndex = 6;
-            this.btnDangNhap.Text = "Đăng Nhập";
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // ucDangNhap
             // 

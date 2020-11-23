@@ -32,6 +32,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.mPanelContainer = new MetroFramework.Controls.MetroPanel();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
@@ -80,6 +81,7 @@
             // mPanelContainer
             // 
             this.mPanelContainer.BackColor = System.Drawing.SystemColors.Control;
+            this.mPanelContainer.Controls.Add(this.metroTile8);
             this.mPanelContainer.Controls.Add(this.metroTile7);
             this.mPanelContainer.Controls.Add(this.metroTile6);
             this.mPanelContainer.Controls.Add(this.metroTile5);
@@ -99,6 +101,24 @@
             this.mPanelContainer.VerticalScrollbarHighlightOnWheel = false;
             this.mPanelContainer.VerticalScrollbarSize = 10;
             // 
+            // metroTile8
+            // 
+            this.metroTile8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.metroTile8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTile8.CustomBackground = true;
+            this.metroTile8.Location = new System.Drawing.Point(684, 375);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(130, 130);
+            this.metroTile8.TabIndex = 10;
+            this.metroTile8.Tag = "Thoat";
+            this.metroTile8.Text = "Thoát";
+            this.metroTile8.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.metroTile8.TileImage = global::GUI.Properties.Resources.thoat1;
+            this.metroTile8.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile8.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile8.UseTileImage = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
+            // 
             // metroTile7
             // 
             this.metroTile7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(84)))), ((int)(((byte)(0)))));
@@ -106,7 +126,7 @@
             this.metroTile7.CustomBackground = true;
             this.metroTile7.Location = new System.Drawing.Point(548, 375);
             this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(266, 130);
+            this.metroTile7.Size = new System.Drawing.Size(130, 130);
             this.metroTile7.TabIndex = 9;
             this.metroTile7.Tag = "HoaDon";
             this.metroTile7.Text = "Hóa Đơn";
@@ -276,5 +296,6 @@
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile1;
         private System.Windows.Forms.Timer timer1;
+        private MetroFramework.Controls.MetroTile metroTile8;
     }
 }

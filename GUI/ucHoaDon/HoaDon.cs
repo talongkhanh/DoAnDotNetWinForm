@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Controls;
+using GUI.ucHeThong;
 
-namespace GUI.ucHeThong
+namespace GUI.ucHoaDon
 {
-    public partial class HeThong : UserControl
+    public partial class HoaDon : UserControl
     {
-        public HeThong()
+        public HoaDon()
         {
             InitializeComponent();
         }
@@ -100,21 +101,21 @@ namespace GUI.ucHeThong
         {
             // Delete content
 
-            foreach (var item in mPanelHeThong.Controls.OfType<UserControl>())
+            foreach (var item in mpanelHoaDon.Controls.OfType<UserControl>())
             {
-                mPanelHeThong.Controls.Remove(item);
+                mpanelHoaDon.Controls.Remove(item);
             }
 
             // Add new content 
 
             switch (name)
             {
-                case "QuanLyTaiKhoan":
+                case "DanhSachHoaDon":
                     {
-                        QuanLyTaiKhoan QuanLyTaiKhoan = new QuanLyTaiKhoan();
-                        QuanLyTaiKhoan.Dock = DockStyle.Fill;
-                        mPanelHeThong.Controls.Add(QuanLyTaiKhoan);
-                        mPanelHeThong.Controls["QuanLyTaiKhoan"].BringToFront();
+                        DanhSachHoaDon DanhSachHoaDon = new DanhSachHoaDon();
+                        DanhSachHoaDon.Dock = DockStyle.Fill;
+                        mpanelHoaDon.Controls.Add(DanhSachHoaDon);
+                        mpanelHoaDon.Controls["DanhSachHoaDon"].BringToFront();
 
                     }
                     break; ;
@@ -129,28 +130,9 @@ namespace GUI.ucHeThong
             frmMain.frmMain_.MetroContainer.Controls.Add(ucManHinhChinh);
             frmMain.frmMain_.MetroContainer.Controls["ucManHinhChinh"].BringToFront();
 
-            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<HeThong>())
+            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<HoaDon>())
             {
                 frmMain.frmMain_.MetroContainer.Controls.Remove(item);
-            }
-        }
-
-        private void dangxuat(object sender, EventArgs e)
-        {
-            DialogResult ok = new DialogResult();
-            ok = MessageBox.Show("Bạn muốn đăng xuất!", "Chuyển tai khoản", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (ok == DialogResult.OK)
-            {
-                ucDangNhap ucDangNhap = new ucDangNhap();
-                ucDangNhap.Dock = DockStyle.Fill;
-
-                frmMain.frmMain_.MetroContainer.Controls.Add(ucDangNhap);
-                frmMain.frmMain_.MetroContainer.Controls["ucDangNhap"].BringToFront();
-
-                foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<HeThong>())
-                {
-                    frmMain.frmMain_.MetroContainer.Controls.Remove(item);
-                }
             }
         }
     }

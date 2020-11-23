@@ -19,8 +19,8 @@ namespace GUI.ucHeThong
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (txtTaiKhoan.Text == "admin" && txtMatKhau.Text == "admin")
-            {
+            //if (txtTaiKhoan.Text == "admin" && txtMatKhau.Text == "admin")
+            //{
                 ucManHinhChinh ucManHinhChinh = new ucManHinhChinh();
                 ucManHinhChinh.Dock = DockStyle.Fill;
 
@@ -31,7 +31,7 @@ namespace GUI.ucHeThong
                 {
                     frmMain.frmMain_.MetroContainer.Controls.Remove(item);
                 }
-            }
+            //}
         }
     }
 }

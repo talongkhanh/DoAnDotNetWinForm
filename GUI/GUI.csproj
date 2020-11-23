@@ -163,6 +163,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucDichVu\DichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDichVu\DichVu.Designer.cs">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDichVu\QuanLyDichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDichVu\QuanLyDichVu.Designer.cs">
+      <DependentUpon>QuanLyDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDichVu\SuDungDichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDichVu\SuDungDichVu.Designer.cs">
+      <DependentUpon>SuDungDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHeThong\QuanLyTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHeThong\QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucHeThong\ucDangNhap.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +204,18 @@
     </Compile>
     <Compile Include="ucHeThong\ucManHinhChinh.Designer.cs">
       <DependentUpon>ucManHinhChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHoaDon\DanhSachHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHoaDon\DanhSachHoaDon.Designer.cs">
+      <DependentUpon>DanhSachHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHoaDon\HoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHoaDon\HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="ucNhanVien\NhanVien.cs">
       <SubType>UserControl</SubType>
@@ -205,6 +241,66 @@
     <Compile Include="ucNhanVien\QuanLyPhongBan.Designer.cs">
       <DependentUpon>QuanLyPhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucPhong\Phong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhong\Phong.Designer.cs">
+      <DependentUpon>Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhong\QuanLyLoaiPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhong\QuanLyLoaiPhong.Designer.cs">
+      <DependentUpon>QuanLyLoaiPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhong\QuanLyPhongThue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhong\QuanLyPhongThue.Designer.cs">
+      <DependentUpon>QuanLyPhongThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThuePhong\KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThuePhong\KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThuePhong\KhachHangThuePhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThuePhong\KhachHangThuePhong.Designer.cs">
+      <DependentUpon>KhachHangThuePhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThuePhong\ThuePhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThuePhong\ThuePhong.Designer.cs">
+      <DependentUpon>ThuePhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTienNghi\QuanLyTienNghi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTienNghi\QuanLyTienNghi.Designer.cs">
+      <DependentUpon>QuanLyTienNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTienNghi\TienNghi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTienNghi\TienNghi.Designer.cs">
+      <DependentUpon>TienNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTraPhong\KhachHangTraPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTraPhong\KhachHangTraPhong.Designer.cs">
+      <DependentUpon>KhachHangTraPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTraPhong\TraPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTraPhong\TraPhong.Designer.cs">
+      <DependentUpon>TraPhong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,11 +314,32 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucDichVu\DichVu.resx">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDichVu\QuanLyDichVu.resx">
+      <DependentUpon>QuanLyDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDichVu\SuDungDichVu.resx">
+      <DependentUpon>SuDungDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHeThong\QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucHeThong\ucDangNhap.resx">
       <DependentUpon>ucDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucHeThong\ucHeThong.resx">
+      <DependentUpon>ucHeThong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucHeThong\ucManHinhChinh.resx">
       <DependentUpon>ucManHinhChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHoaDon\DanhSachHoaDon.resx">
+      <DependentUpon>DanhSachHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHoaDon\HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucNhanVien\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
@@ -235,6 +352,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucNhanVien\QuanLyPhongBan.resx">
       <DependentUpon>QuanLyPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhong\Phong.resx">
+      <DependentUpon>Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhong\QuanLyLoaiPhong.resx">
+      <DependentUpon>QuanLyLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhong\QuanLyPhongThue.resx">
+      <DependentUpon>QuanLyPhongThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThuePhong\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThuePhong\KhachHangThuePhong.resx">
+      <DependentUpon>KhachHangThuePhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThuePhong\ThuePhong.resx">
+      <DependentUpon>ThuePhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTienNghi\QuanLyTienNghi.resx">
+      <DependentUpon>QuanLyTienNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTienNghi\TienNghi.resx">
+      <DependentUpon>TienNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTraPhong\KhachHangTraPhong.resx">
+      <DependentUpon>KhachHangTraPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTraPhong\TraPhong.resx">
+      <DependentUpon>TraPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -258,6 +405,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\dangxuat.png" />
+    <None Include="Resources\taikhoan.png" />
+    <None Include="Resources\khachhang.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\sđichvu.png" />
+    <None Include="Resources\qldichvu.png" />
+    <None Include="Resources\phongthue.png" />
+    <None Include="Resources\loaiphong.png" />
     <None Include="Resources\thoat1.png" />
     <None Include="Resources\phongBan.png" />
     <None Include="Resources\chuc vu.png" />

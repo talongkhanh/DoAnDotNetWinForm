@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.layoutNhanVien = new System.Windows.Forms.TableLayoutPanel();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTroVe = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.mPanelMenu = new MetroFramework.Controls.MetroPanel();
@@ -45,9 +42,10 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mpanelQlNvContent = new MetroFramework.Controls.MetroPanel();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.layoutNhanVien.SuspendLayout();
-            this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.mPanelMenu.SuspendLayout();
@@ -57,6 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.btnQlNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -72,51 +72,9 @@
             this.layoutNhanVien.Location = new System.Drawing.Point(0, 0);
             this.layoutNhanVien.Name = "layoutNhanVien";
             this.layoutNhanVien.RowCount = 1;
-            this.layoutNhanVien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutNhanVien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.layoutNhanVien.Size = new System.Drawing.Size(1257, 50);
             this.layoutNhanVien.TabIndex = 0;
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.metroPanel1.Controls.Add(this.metroLabel1);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.CustomBackground = true;
-            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(3, 3);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(371, 44);
-            this.metroPanel1.TabIndex = 0;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.CustomBackground = true;
-            this.metroLabel1.CustomForeColor = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.ForeColor = System.Drawing.Color.White;
-            this.metroLabel1.Location = new System.Drawing.Point(74, 15);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(164, 25);
-            this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Quản Lý Nhân Viên";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // btnTroVe
             // 
@@ -179,9 +137,9 @@
             this.btnQlPhongBan.HorizontalScrollbarBarColor = true;
             this.btnQlPhongBan.HorizontalScrollbarHighlightOnWheel = false;
             this.btnQlPhongBan.HorizontalScrollbarSize = 10;
-            this.btnQlPhongBan.Location = new System.Drawing.Point(3, 200);
+            this.btnQlPhongBan.Location = new System.Drawing.Point(0, 200);
             this.btnQlPhongBan.Name = "btnQlPhongBan";
-            this.btnQlPhongBan.Size = new System.Drawing.Size(368, 50);
+            this.btnQlPhongBan.Size = new System.Drawing.Size(396, 50);
             this.btnQlPhongBan.TabIndex = 4;
             this.btnQlPhongBan.Tag = "0";
             this.btnQlPhongBan.VerticalScrollbar = true;
@@ -232,9 +190,9 @@
             this.btnQlChucVu.HorizontalScrollbarBarColor = true;
             this.btnQlChucVu.HorizontalScrollbarHighlightOnWheel = false;
             this.btnQlChucVu.HorizontalScrollbarSize = 10;
-            this.btnQlChucVu.Location = new System.Drawing.Point(3, 129);
+            this.btnQlChucVu.Location = new System.Drawing.Point(0, 129);
             this.btnQlChucVu.Name = "btnQlChucVu";
-            this.btnQlChucVu.Size = new System.Drawing.Size(368, 50);
+            this.btnQlChucVu.Size = new System.Drawing.Size(396, 50);
             this.btnQlChucVu.TabIndex = 3;
             this.btnQlChucVu.Tag = "0";
             this.btnQlChucVu.VerticalScrollbar = true;
@@ -285,9 +243,9 @@
             this.btnQlNhanVien.HorizontalScrollbarBarColor = true;
             this.btnQlNhanVien.HorizontalScrollbarHighlightOnWheel = false;
             this.btnQlNhanVien.HorizontalScrollbarSize = 10;
-            this.btnQlNhanVien.Location = new System.Drawing.Point(3, 58);
+            this.btnQlNhanVien.Location = new System.Drawing.Point(0, 73);
             this.btnQlNhanVien.Name = "btnQlNhanVien";
-            this.btnQlNhanVien.Size = new System.Drawing.Size(368, 50);
+            this.btnQlNhanVien.Size = new System.Drawing.Size(388, 50);
             this.btnQlNhanVien.TabIndex = 2;
             this.btnQlNhanVien.Tag = "0";
             this.btnQlNhanVien.VerticalScrollbar = true;
@@ -341,6 +299,48 @@
             this.mpanelQlNvContent.VerticalScrollbarHighlightOnWheel = false;
             this.mpanelQlNvContent.VerticalScrollbarSize = 10;
             // 
+            // metroPanel1
+            // 
+            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.metroPanel1.Controls.Add(this.metroLabel1);
+            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.CustomBackground = true;
+            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(3, 3);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(371, 44);
+            this.metroPanel1.TabIndex = 4;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.CustomBackground = true;
+            this.metroLabel1.CustomForeColor = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.ForeColor = System.Drawing.Color.White;
+            this.metroLabel1.Location = new System.Drawing.Point(74, 15);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(94, 25);
+            this.metroLabel1.TabIndex = 3;
+            this.metroLabel1.Text = "Nhân Viên";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.nhanvien;
+            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.pictureBox1.Location = new System.Drawing.Point(13, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // templateNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -350,9 +350,6 @@
             this.Name = "templateNhanVien";
             this.Size = new System.Drawing.Size(1257, 724);
             this.layoutNhanVien.ResumeLayout(false);
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.mPanelMenu.ResumeLayout(false);
@@ -365,6 +362,9 @@
             this.btnQlNhanVien.ResumeLayout(false);
             this.btnQlNhanVien.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -372,10 +372,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel layoutNhanVien;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnTroVe;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MetroFramework.Controls.MetroPanel mPanelMenu;
         private MetroFramework.Controls.MetroPanel btnQlNhanVien;
@@ -388,5 +385,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private MetroFramework.Controls.MetroPanel mpanelQlNvContent;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

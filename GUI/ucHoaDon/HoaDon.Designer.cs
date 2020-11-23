@@ -1,6 +1,6 @@
-﻿namespace GUI.ucHeThong
+﻿namespace GUI.ucHoaDon
 {
-    partial class HeThong
+    partial class HoaDon
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,27 +31,22 @@
             this.layoutNhanVien = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnTroVe = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.mPanelMenu = new MetroFramework.Controls.MetroPanel();
             this.btnQLLoaiPhong = new MetroFramework.Controls.MetroPanel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.mPanelHeThong = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnTroVe = new System.Windows.Forms.PictureBox();
+            this.mpanelHoaDon = new MetroFramework.Controls.MetroPanel();
             this.layoutNhanVien.SuspendLayout();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.mPanelMenu.SuspendLayout();
             this.btnQLLoaiPhong.SuspendLayout();
-            this.metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -68,7 +63,7 @@
             this.layoutNhanVien.Name = "layoutNhanVien";
             this.layoutNhanVien.RowCount = 1;
             this.layoutNhanVien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layoutNhanVien.Size = new System.Drawing.Size(1039, 50);
+            this.layoutNhanVien.Size = new System.Drawing.Size(1051, 50);
             this.layoutNhanVien.TabIndex = 4;
             // 
             // metroPanel1
@@ -97,29 +92,54 @@
             this.metroLabel1.ForeColor = System.Drawing.Color.White;
             this.metroLabel1.Location = new System.Drawing.Point(74, 15);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(91, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(84, 25);
             this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Trả Phòng";
+            this.metroLabel1.Text = "Hóa Đơn";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.hoadon;
+            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnTroVe
+            // 
+            this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnTroVe.Image = global::GUI.Properties.Resources.thoat1;
+            this.btnTroVe.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.btnTroVe.Location = new System.Drawing.Point(975, 3);
+            this.btnTroVe.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
+            this.btnTroVe.Name = "btnTroVe";
+            this.btnTroVe.Size = new System.Drawing.Size(73, 44);
+            this.btnTroVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnTroVe.TabIndex = 3;
+            this.btnTroVe.TabStop = false;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.Controls.Add(this.mpanelHoaDon, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mPanelMenu, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.mPanelHeThong, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 50);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1039, 656);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1051, 596);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // mPanelMenu
             // 
             this.mPanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.mPanelMenu.Controls.Add(this.metroPanel2);
             this.mPanelMenu.Controls.Add(this.btnQLLoaiPhong);
             this.mPanelMenu.CustomBackground = true;
             this.mPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -128,7 +148,7 @@
             this.mPanelMenu.HorizontalScrollbarSize = 10;
             this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(305, 650);
+            this.mPanelMenu.Size = new System.Drawing.Size(309, 590);
             this.mPanelMenu.TabIndex = 4;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;
@@ -136,7 +156,7 @@
             // 
             // btnQLLoaiPhong
             // 
-            this.btnQLLoaiPhong.AccessibleName = "QuanLyTaiKhoan";
+            this.btnQLLoaiPhong.AccessibleName = "DanhSachHoaDon";
             this.btnQLLoaiPhong.Controls.Add(this.metroLabel2);
             this.btnQLLoaiPhong.Controls.Add(this.pictureBox2);
             this.btnQLLoaiPhong.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -167,83 +187,16 @@
             this.metroLabel2.ForeColor = System.Drawing.Color.White;
             this.metroLabel2.Location = new System.Drawing.Point(71, 15);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(157, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(172, 25);
             this.metroLabel2.TabIndex = 4;
-            this.metroLabel2.Text = "Quản Lý Tài Khoản";
+            this.metroLabel2.Text = "Danh Sách Hóa Đơn";
             this.metroLabel2.Click += new System.EventHandler(this.metroLabel_Click);
             this.metroLabel2.MouseLeave += new System.EventHandler(this.metroLabel_MouseLeave);
             this.metroLabel2.MouseHover += new System.EventHandler(this.metroLabel_MouseHover);
             // 
-            // mPanelHeThong
-            // 
-            this.mPanelHeThong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mPanelHeThong.HorizontalScrollbarBarColor = true;
-            this.mPanelHeThong.HorizontalScrollbarHighlightOnWheel = false;
-            this.mPanelHeThong.HorizontalScrollbarSize = 10;
-            this.mPanelHeThong.Location = new System.Drawing.Point(314, 3);
-            this.mPanelHeThong.Name = "mPanelHeThong";
-            this.mPanelHeThong.Size = new System.Drawing.Size(722, 650);
-            this.mPanelHeThong.TabIndex = 5;
-            this.mPanelHeThong.VerticalScrollbarBarColor = true;
-            this.mPanelHeThong.VerticalScrollbarHighlightOnWheel = false;
-            this.mPanelHeThong.VerticalScrollbarSize = 10;
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.AccessibleName = "QuanLyTaiKhoan";
-            this.metroPanel2.Controls.Add(this.metroLabel3);
-            this.metroPanel2.Controls.Add(this.pictureBox3);
-            this.metroPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroPanel2.CustomBackground = true;
-            this.metroPanel2.HorizontalScrollbar = true;
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(0, 141);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(378, 50);
-            this.metroPanel2.TabIndex = 3;
-            this.metroPanel2.Tag = "0";
-            this.metroPanel2.VerticalScrollbar = true;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            this.metroPanel2.Click += new System.EventHandler(this.dangxuat);
-            this.metroPanel2.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
-            this.metroPanel2.MouseHover += new System.EventHandler(this.btn_MouseHover);
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.CustomBackground = true;
-            this.metroLabel3.CustomForeColor = true;
-            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.ForeColor = System.Drawing.Color.White;
-            this.metroLabel3.Location = new System.Drawing.Point(71, 15);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(120, 25);
-            this.metroLabel3.TabIndex = 4;
-            this.metroLabel3.Text = "Đổi Tài Khoản";
-            this.metroLabel3.Click += new System.EventHandler(this.dangxuat);
-            this.metroLabel3.MouseLeave += new System.EventHandler(this.metroLabel_MouseLeave);
-            this.metroLabel3.MouseHover += new System.EventHandler(this.metroLabel_MouseHover);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::GUI.Properties.Resources.dangxuat;
-            this.pictureBox3.Location = new System.Drawing.Point(10, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.dangxuat);
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox_MouseLeave);
-            this.pictureBox3.MouseHover += new System.EventHandler(this.pictureBox_MouseHover);
-            // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::GUI.Properties.Resources.taikhoan;
+            this.pictureBox2.Image = global::GUI.Properties.Resources.hoadon;
             this.pictureBox2.Location = new System.Drawing.Point(10, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
@@ -254,53 +207,39 @@
             this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox_MouseLeave);
             this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox_MouseHover);
             // 
-            // pictureBox1
+            // mpanelHoaDon
             // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.setting;
-            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.mpanelHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mpanelHoaDon.HorizontalScrollbarBarColor = true;
+            this.mpanelHoaDon.HorizontalScrollbarHighlightOnWheel = false;
+            this.mpanelHoaDon.HorizontalScrollbarSize = 10;
+            this.mpanelHoaDon.Location = new System.Drawing.Point(318, 3);
+            this.mpanelHoaDon.Name = "mpanelHoaDon";
+            this.mpanelHoaDon.Size = new System.Drawing.Size(730, 590);
+            this.mpanelHoaDon.TabIndex = 5;
+            this.mpanelHoaDon.VerticalScrollbarBarColor = true;
+            this.mpanelHoaDon.VerticalScrollbarHighlightOnWheel = false;
+            this.mpanelHoaDon.VerticalScrollbarSize = 10;
             // 
-            // btnTroVe
-            // 
-            this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnTroVe.Image = global::GUI.Properties.Resources.thoat1;
-            this.btnTroVe.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.btnTroVe.Location = new System.Drawing.Point(963, 3);
-            this.btnTroVe.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
-            this.btnTroVe.Name = "btnTroVe";
-            this.btnTroVe.Size = new System.Drawing.Size(73, 44);
-            this.btnTroVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnTroVe.TabIndex = 3;
-            this.btnTroVe.TabStop = false;
-            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
-            // 
-            // HeThong
+            // HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.layoutNhanVien);
-            this.Name = "HeThong";
-            this.Size = new System.Drawing.Size(1039, 706);
+            this.Name = "HoaDon";
+            this.Size = new System.Drawing.Size(1051, 646);
+            this.Tag = "HoaDon";
             this.layoutNhanVien.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.mPanelMenu.ResumeLayout(false);
             this.btnQLLoaiPhong.ResumeLayout(false);
             this.btnQLLoaiPhong.PerformLayout();
-            this.metroPanel2.ResumeLayout(false);
-            this.metroPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,9 +256,6 @@
         private MetroFramework.Controls.MetroPanel btnQLLoaiPhong;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private MetroFramework.Controls.MetroPanel mPanelHeThong;
-        private MetroFramework.Controls.MetroPanel metroPanel2;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private MetroFramework.Controls.MetroPanel mpanelHoaDon;
     }
 }
