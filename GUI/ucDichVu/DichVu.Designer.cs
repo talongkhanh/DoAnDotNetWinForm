@@ -105,7 +105,7 @@
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.dichvu;
             this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(13, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -130,8 +130,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.Controls.Add(this.mPanelMenu, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mpanelQlDvContent, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -154,7 +154,7 @@
             this.mPanelMenu.HorizontalScrollbarSize = 10;
             this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(273, 498);
+            this.mPanelMenu.Size = new System.Drawing.Size(180, 498);
             this.mPanelMenu.TabIndex = 1;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;
@@ -271,9 +271,9 @@
             this.mpanelQlDvContent.HorizontalScrollbarBarColor = true;
             this.mpanelQlDvContent.HorizontalScrollbarHighlightOnWheel = false;
             this.mpanelQlDvContent.HorizontalScrollbarSize = 10;
-            this.mpanelQlDvContent.Location = new System.Drawing.Point(282, 3);
+            this.mpanelQlDvContent.Location = new System.Drawing.Point(189, 3);
             this.mpanelQlDvContent.Name = "mpanelQlDvContent";
-            this.mpanelQlDvContent.Size = new System.Drawing.Size(645, 498);
+            this.mpanelQlDvContent.Size = new System.Drawing.Size(738, 498);
             this.mpanelQlDvContent.TabIndex = 2;
             this.mpanelQlDvContent.VerticalScrollbarBarColor = true;
             this.mpanelQlDvContent.VerticalScrollbarHighlightOnWheel = false;

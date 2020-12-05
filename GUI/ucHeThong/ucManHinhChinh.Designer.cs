@@ -93,9 +93,9 @@
             this.mPanelContainer.HorizontalScrollbarBarColor = true;
             this.mPanelContainer.HorizontalScrollbarHighlightOnWheel = false;
             this.mPanelContainer.HorizontalScrollbarSize = 10;
-            this.mPanelContainer.Location = new System.Drawing.Point(0, 0);
+            this.mPanelContainer.Location = new System.Drawing.Point(158, 59);
             this.mPanelContainer.Name = "mPanelContainer";
-            this.mPanelContainer.Size = new System.Drawing.Size(917, 578);
+            this.mPanelContainer.Size = new System.Drawing.Size(688, 493);
             this.mPanelContainer.TabIndex = 2;
             this.mPanelContainer.VerticalScrollbarBarColor = true;
             this.mPanelContainer.VerticalScrollbarHighlightOnWheel = false;
@@ -106,7 +106,7 @@
             this.metroTile8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.metroTile8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile8.CustomBackground = true;
-            this.metroTile8.Location = new System.Drawing.Point(684, 375);
+            this.metroTile8.Location = new System.Drawing.Point(517, 318);
             this.metroTile8.Name = "metroTile8";
             this.metroTile8.Size = new System.Drawing.Size(130, 130);
             this.metroTile8.TabIndex = 10;
@@ -124,7 +124,7 @@
             this.metroTile7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(84)))), ((int)(((byte)(0)))));
             this.metroTile7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile7.CustomBackground = true;
-            this.metroTile7.Location = new System.Drawing.Point(548, 375);
+            this.metroTile7.Location = new System.Drawing.Point(381, 318);
             this.metroTile7.Name = "metroTile7";
             this.metroTile7.Size = new System.Drawing.Size(130, 130);
             this.metroTile7.TabIndex = 9;
@@ -142,7 +142,7 @@
             this.metroTile6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.metroTile6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile6.CustomBackground = true;
-            this.metroTile6.Location = new System.Drawing.Point(684, 103);
+            this.metroTile6.Location = new System.Drawing.Point(517, 46);
             this.metroTile6.Name = "metroTile6";
             this.metroTile6.Size = new System.Drawing.Size(130, 266);
             this.metroTile6.TabIndex = 8;
@@ -160,7 +160,7 @@
             this.metroTile5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
             this.metroTile5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile5.CustomBackground = true;
-            this.metroTile5.Location = new System.Drawing.Point(219, 375);
+            this.metroTile5.Location = new System.Drawing.Point(52, 318);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(266, 130);
             this.metroTile5.TabIndex = 7;
@@ -178,7 +178,7 @@
             this.metroTile4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.metroTile4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile4.CustomBackground = true;
-            this.metroTile4.Location = new System.Drawing.Point(548, 103);
+            this.metroTile4.Location = new System.Drawing.Point(381, 46);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(130, 266);
             this.metroTile4.TabIndex = 6;
@@ -196,7 +196,7 @@
             this.metroTile3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.metroTile3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile3.CustomBackground = true;
-            this.metroTile3.Location = new System.Drawing.Point(355, 239);
+            this.metroTile3.Location = new System.Drawing.Point(188, 182);
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(130, 130);
             this.metroTile3.TabIndex = 5;
@@ -214,7 +214,7 @@
             this.metroTile2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.metroTile2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile2.CustomBackground = true;
-            this.metroTile2.Location = new System.Drawing.Point(355, 103);
+            this.metroTile2.Location = new System.Drawing.Point(188, 46);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(130, 130);
             this.metroTile2.TabIndex = 4;
@@ -232,7 +232,7 @@
             this.metroTile1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.metroTile1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile1.CustomBackground = true;
-            this.metroTile1.Location = new System.Drawing.Point(219, 239);
+            this.metroTile1.Location = new System.Drawing.Point(52, 182);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(130, 130);
             this.metroTile1.TabIndex = 3;
@@ -250,7 +250,7 @@
             this.btnHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnHeThong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHeThong.CustomBackground = true;
-            this.btnHeThong.Location = new System.Drawing.Point(219, 103);
+            this.btnHeThong.Location = new System.Drawing.Point(52, 46);
             this.btnHeThong.Name = "btnHeThong";
             this.btnHeThong.Size = new System.Drawing.Size(130, 130);
             this.btnHeThong.TabIndex = 2;

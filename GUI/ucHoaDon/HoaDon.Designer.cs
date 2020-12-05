@@ -34,11 +34,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTroVe = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.mpanelHoaDon = new MetroFramework.Controls.MetroPanel();
             this.mPanelMenu = new MetroFramework.Controls.MetroPanel();
             this.btnQLLoaiPhong = new MetroFramework.Controls.MetroPanel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.mpanelHoaDon = new MetroFramework.Controls.MetroPanel();
             this.layoutNhanVien.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,7 +90,7 @@
             this.metroLabel1.CustomForeColor = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.ForeColor = System.Drawing.Color.White;
-            this.metroLabel1.Location = new System.Drawing.Point(74, 15);
+            this.metroLabel1.Location = new System.Drawing.Point(74, 8);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(84, 25);
             this.metroLabel1.TabIndex = 3;
@@ -113,10 +113,10 @@
             this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTroVe.Image = global::GUI.Properties.Resources.thoat1;
             this.btnTroVe.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.btnTroVe.Location = new System.Drawing.Point(975, 3);
+            this.btnTroVe.Location = new System.Drawing.Point(998, 3);
             this.btnTroVe.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
             this.btnTroVe.Name = "btnTroVe";
-            this.btnTroVe.Size = new System.Drawing.Size(73, 44);
+            this.btnTroVe.Size = new System.Drawing.Size(50, 44);
             this.btnTroVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnTroVe.TabIndex = 3;
             this.btnTroVe.TabStop = false;
@@ -125,8 +125,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.Controls.Add(this.mpanelHoaDon, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mPanelMenu, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -137,6 +137,21 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1051, 596);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
+            // mpanelHoaDon
+            // 
+            this.mpanelHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mpanelHoaDon.HorizontalScrollbarBarColor = true;
+            this.mpanelHoaDon.HorizontalScrollbarHighlightOnWheel = false;
+            this.mpanelHoaDon.HorizontalScrollbarSize = 10;
+            this.mpanelHoaDon.Location = new System.Drawing.Point(210, 0);
+            this.mpanelHoaDon.Margin = new System.Windows.Forms.Padding(0);
+            this.mpanelHoaDon.Name = "mpanelHoaDon";
+            this.mpanelHoaDon.Size = new System.Drawing.Size(841, 596);
+            this.mpanelHoaDon.TabIndex = 5;
+            this.mpanelHoaDon.VerticalScrollbarBarColor = true;
+            this.mpanelHoaDon.VerticalScrollbarHighlightOnWheel = false;
+            this.mpanelHoaDon.VerticalScrollbarSize = 10;
+            // 
             // mPanelMenu
             // 
             this.mPanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -146,9 +161,10 @@
             this.mPanelMenu.HorizontalScrollbarBarColor = true;
             this.mPanelMenu.HorizontalScrollbarHighlightOnWheel = false;
             this.mPanelMenu.HorizontalScrollbarSize = 10;
-            this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
+            this.mPanelMenu.Location = new System.Drawing.Point(0, 3);
+            this.mPanelMenu.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(309, 590);
+            this.mPanelMenu.Size = new System.Drawing.Size(207, 590);
             this.mPanelMenu.TabIndex = 4;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;
@@ -206,20 +222,6 @@
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox_Click);
             this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox_MouseLeave);
             this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox_MouseHover);
-            // 
-            // mpanelHoaDon
-            // 
-            this.mpanelHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mpanelHoaDon.HorizontalScrollbarBarColor = true;
-            this.mpanelHoaDon.HorizontalScrollbarHighlightOnWheel = false;
-            this.mpanelHoaDon.HorizontalScrollbarSize = 10;
-            this.mpanelHoaDon.Location = new System.Drawing.Point(318, 3);
-            this.mpanelHoaDon.Name = "mpanelHoaDon";
-            this.mpanelHoaDon.Size = new System.Drawing.Size(730, 590);
-            this.mpanelHoaDon.TabIndex = 5;
-            this.mpanelHoaDon.VerticalScrollbarBarColor = true;
-            this.mpanelHoaDon.VerticalScrollbarHighlightOnWheel = false;
-            this.mpanelHoaDon.VerticalScrollbarSize = 10;
             // 
             // HoaDon
             // 

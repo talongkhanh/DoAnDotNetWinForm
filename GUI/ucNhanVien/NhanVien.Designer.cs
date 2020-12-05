@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.layoutNhanVien = new System.Windows.Forms.TableLayoutPanel();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTroVe = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.mPanelMenu = new MetroFramework.Controls.MetroPanel();
@@ -42,10 +45,9 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mpanelQlNvContent = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.layoutNhanVien.SuspendLayout();
+            this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.mPanelMenu.SuspendLayout();
@@ -55,8 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.btnQlNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -76,6 +76,48 @@
             this.layoutNhanVien.Size = new System.Drawing.Size(1257, 50);
             this.layoutNhanVien.TabIndex = 0;
             // 
+            // metroPanel1
+            // 
+            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.metroPanel1.Controls.Add(this.metroLabel1);
+            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.CustomBackground = true;
+            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(3, 3);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(371, 44);
+            this.metroPanel1.TabIndex = 4;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.CustomBackground = true;
+            this.metroLabel1.CustomForeColor = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.ForeColor = System.Drawing.Color.White;
+            this.metroLabel1.Location = new System.Drawing.Point(74, 15);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(94, 25);
+            this.metroLabel1.TabIndex = 3;
+            this.metroLabel1.Text = "Nhân Viên";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.nhanvien;
+            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.pictureBox1.Location = new System.Drawing.Point(13, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnTroVe
             // 
             this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -94,8 +136,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.Controls.Add(this.mPanelMenu, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mpanelQlNvContent, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -103,7 +145,6 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 674F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1257, 674);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -120,7 +161,7 @@
             this.mPanelMenu.HorizontalScrollbarSize = 10;
             this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(371, 668);
+            this.mPanelMenu.Size = new System.Drawing.Size(245, 668);
             this.mPanelMenu.TabIndex = 0;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;
@@ -139,7 +180,7 @@
             this.btnQlPhongBan.HorizontalScrollbarSize = 10;
             this.btnQlPhongBan.Location = new System.Drawing.Point(0, 200);
             this.btnQlPhongBan.Name = "btnQlPhongBan";
-            this.btnQlPhongBan.Size = new System.Drawing.Size(396, 50);
+            this.btnQlPhongBan.Size = new System.Drawing.Size(505, 50);
             this.btnQlPhongBan.TabIndex = 4;
             this.btnQlPhongBan.Tag = "0";
             this.btnQlPhongBan.VerticalScrollbar = true;
@@ -192,7 +233,7 @@
             this.btnQlChucVu.HorizontalScrollbarSize = 10;
             this.btnQlChucVu.Location = new System.Drawing.Point(0, 129);
             this.btnQlChucVu.Name = "btnQlChucVu";
-            this.btnQlChucVu.Size = new System.Drawing.Size(396, 50);
+            this.btnQlChucVu.Size = new System.Drawing.Size(532, 50);
             this.btnQlChucVu.TabIndex = 3;
             this.btnQlChucVu.Tag = "0";
             this.btnQlChucVu.VerticalScrollbar = true;
@@ -245,7 +286,7 @@
             this.btnQlNhanVien.HorizontalScrollbarSize = 10;
             this.btnQlNhanVien.Location = new System.Drawing.Point(0, 73);
             this.btnQlNhanVien.Name = "btnQlNhanVien";
-            this.btnQlNhanVien.Size = new System.Drawing.Size(388, 50);
+            this.btnQlNhanVien.Size = new System.Drawing.Size(498, 50);
             this.btnQlNhanVien.TabIndex = 2;
             this.btnQlNhanVien.Tag = "0";
             this.btnQlNhanVien.VerticalScrollbar = true;
@@ -291,55 +332,13 @@
             this.mpanelQlNvContent.HorizontalScrollbarBarColor = true;
             this.mpanelQlNvContent.HorizontalScrollbarHighlightOnWheel = false;
             this.mpanelQlNvContent.HorizontalScrollbarSize = 10;
-            this.mpanelQlNvContent.Location = new System.Drawing.Point(380, 3);
+            this.mpanelQlNvContent.Location = new System.Drawing.Point(254, 3);
             this.mpanelQlNvContent.Name = "mpanelQlNvContent";
-            this.mpanelQlNvContent.Size = new System.Drawing.Size(874, 668);
+            this.mpanelQlNvContent.Size = new System.Drawing.Size(1000, 668);
             this.mpanelQlNvContent.TabIndex = 1;
             this.mpanelQlNvContent.VerticalScrollbarBarColor = true;
             this.mpanelQlNvContent.VerticalScrollbarHighlightOnWheel = false;
             this.mpanelQlNvContent.VerticalScrollbarSize = 10;
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.metroPanel1.Controls.Add(this.metroLabel1);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.CustomBackground = true;
-            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(3, 3);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(371, 44);
-            this.metroPanel1.TabIndex = 4;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.CustomBackground = true;
-            this.metroLabel1.CustomForeColor = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.ForeColor = System.Drawing.Color.White;
-            this.metroLabel1.Location = new System.Drawing.Point(74, 15);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(94, 25);
-            this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Nhân Viên";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.Location = new System.Drawing.Point(13, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // templateNhanVien
             // 
@@ -350,6 +349,9 @@
             this.Name = "templateNhanVien";
             this.Size = new System.Drawing.Size(1257, 724);
             this.layoutNhanVien.ResumeLayout(false);
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.mPanelMenu.ResumeLayout(false);
@@ -362,9 +364,6 @@
             this.btnQlNhanVien.ResumeLayout(false);
             this.btnQlNhanVien.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

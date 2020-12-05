@@ -143,5 +143,10 @@ namespace GUI.ucThuePhong
                     break;
             }
         }
+
+        private void mpanenThuePhong_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

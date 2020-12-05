@@ -15,6 +15,10 @@ namespace GUI.ucHoaDon
         public DanhSachHoaDon()
         {
             InitializeComponent();
+            dataGridView1.Rows.Add("demo", "demo", "demo");
+            dataGridView1.Rows.Add("demo", "demo", "demo");
+            dataGridView1.Rows.Add("demo", "demo", "demo");
+            dataGridView1.Rows.Add("demo", "demo", "demo");
         }
     }
 }

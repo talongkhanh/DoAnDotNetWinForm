@@ -58,6 +58,7 @@
             this.metroPanel1.Controls.Add(this.metroLabel2);
             this.metroPanel1.Controls.Add(this.pictureBox2);
             this.metroPanel1.CustomBackground = true;
+            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
@@ -85,7 +86,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GUI.Properties.Resources.hosonhanvien;
-            this.pictureBox2.Location = new System.Drawing.Point(0, -6);
+            this.pictureBox2.Location = new System.Drawing.Point(3, -2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

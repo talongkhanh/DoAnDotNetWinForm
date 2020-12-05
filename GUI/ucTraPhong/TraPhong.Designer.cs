@@ -31,22 +31,22 @@
             this.layoutNhanVien = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnTroVe = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.mpanelTraPhong = new MetroFramework.Controls.MetroPanel();
             this.mPanelMenu = new MetroFramework.Controls.MetroPanel();
             this.btnQLLoaiPhong = new MetroFramework.Controls.MetroPanel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnTroVe = new System.Windows.Forms.PictureBox();
             this.layoutNhanVien.SuspendLayout();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.mPanelMenu.SuspendLayout();
             this.btnQLLoaiPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -96,11 +96,37 @@
             this.metroLabel1.TabIndex = 3;
             this.metroLabel1.Text = "Trả Phòng";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.thue;
+            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.pictureBox1.Location = new System.Drawing.Point(13, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnTroVe
+            // 
+            this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnTroVe.Image = global::GUI.Properties.Resources.thoat1;
+            this.btnTroVe.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.btnTroVe.Location = new System.Drawing.Point(951, 3);
+            this.btnTroVe.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
+            this.btnTroVe.Name = "btnTroVe";
+            this.btnTroVe.Size = new System.Drawing.Size(73, 44);
+            this.btnTroVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnTroVe.TabIndex = 3;
+            this.btnTroVe.TabStop = false;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click_1);
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.Controls.Add(this.mpanelTraPhong, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mPanelMenu, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -117,9 +143,9 @@
             this.mpanelTraPhong.HorizontalScrollbarBarColor = true;
             this.mpanelTraPhong.HorizontalScrollbarHighlightOnWheel = false;
             this.mpanelTraPhong.HorizontalScrollbarSize = 10;
-            this.mpanelTraPhong.Location = new System.Drawing.Point(311, 3);
+            this.mpanelTraPhong.Location = new System.Drawing.Point(208, 3);
             this.mpanelTraPhong.Name = "mpanelTraPhong";
-            this.mpanelTraPhong.Size = new System.Drawing.Size(713, 615);
+            this.mpanelTraPhong.Size = new System.Drawing.Size(816, 615);
             this.mpanelTraPhong.TabIndex = 4;
             this.mpanelTraPhong.VerticalScrollbarBarColor = true;
             this.mpanelTraPhong.VerticalScrollbarHighlightOnWheel = false;
@@ -136,7 +162,7 @@
             this.mPanelMenu.HorizontalScrollbarSize = 10;
             this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(302, 615);
+            this.mPanelMenu.Size = new System.Drawing.Size(199, 615);
             this.mPanelMenu.TabIndex = 3;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;
@@ -195,32 +221,6 @@
             this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox_MouseLeave);
             this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox_MouseHover);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.thue;
-            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnTroVe
-            // 
-            this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnTroVe.Image = global::GUI.Properties.Resources.thoat1;
-            this.btnTroVe.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.btnTroVe.Location = new System.Drawing.Point(951, 3);
-            this.btnTroVe.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
-            this.btnTroVe.Name = "btnTroVe";
-            this.btnTroVe.Size = new System.Drawing.Size(73, 44);
-            this.btnTroVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnTroVe.TabIndex = 3;
-            this.btnTroVe.TabStop = false;
-            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click_1);
-            // 
             // TraPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,13 +233,13 @@
             this.layoutNhanVien.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.mPanelMenu.ResumeLayout(false);
             this.btnQLLoaiPhong.ResumeLayout(false);
             this.btnQLLoaiPhong.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.ResumeLayout(false);
 
         }

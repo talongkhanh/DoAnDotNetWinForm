@@ -31,27 +31,27 @@
             this.layoutNhanVien = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnTroVe = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.mPanelMenu = new MetroFramework.Controls.MetroPanel();
             this.btnQlPhongThue = new MetroFramework.Controls.MetroPanel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnQLLoaiPhong = new MetroFramework.Controls.MetroPanel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.mpanenThuePhong = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnTroVe = new System.Windows.Forms.PictureBox();
+            this.mpanenThuePhong = new MetroFramework.Controls.MetroPanel();
             this.layoutNhanVien.SuspendLayout();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.mPanelMenu.SuspendLayout();
             this.btnQlPhongThue.SuspendLayout();
-            this.btnQLLoaiPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.btnQLLoaiPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -101,11 +101,37 @@
             this.metroLabel1.TabIndex = 3;
             this.metroLabel1.Text = "Thuê Phòng";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.traphong;
+            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.pictureBox1.Location = new System.Drawing.Point(13, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnTroVe
+            // 
+            this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnTroVe.Image = global::GUI.Properties.Resources.thoat1;
+            this.btnTroVe.InitialImage = global::GUI.Properties.Resources.nhanvien;
+            this.btnTroVe.Location = new System.Drawing.Point(1075, 3);
+            this.btnTroVe.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
+            this.btnTroVe.Name = "btnTroVe";
+            this.btnTroVe.Size = new System.Drawing.Size(73, 44);
+            this.btnTroVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnTroVe.TabIndex = 3;
+            this.btnTroVe.TabStop = false;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.Controls.Add(this.mPanelMenu, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mpanenThuePhong, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -126,9 +152,10 @@
             this.mPanelMenu.HorizontalScrollbarBarColor = true;
             this.mPanelMenu.HorizontalScrollbarHighlightOnWheel = false;
             this.mPanelMenu.HorizontalScrollbarSize = 10;
-            this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
+            this.mPanelMenu.Location = new System.Drawing.Point(0, 3);
+            this.mPanelMenu.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(339, 560);
+            this.mPanelMenu.Size = new System.Drawing.Size(227, 560);
             this.mPanelMenu.TabIndex = 2;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;
@@ -174,6 +201,19 @@
             this.metroLabel3.MouseLeave += new System.EventHandler(this.metroLabel_MouseLeave);
             this.metroLabel3.MouseHover += new System.EventHandler(this.metroLabel_MouseHover);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::GUI.Properties.Resources.traphong;
+            this.pictureBox3.Location = new System.Drawing.Point(10, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox_Click);
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox_MouseLeave);
+            this.pictureBox3.MouseHover += new System.EventHandler(this.pictureBox_MouseHover);
+            // 
             // btnQLLoaiPhong
             // 
             this.btnQLLoaiPhong.AccessibleName = "KhachHang";
@@ -214,33 +254,6 @@
             this.metroLabel2.MouseLeave += new System.EventHandler(this.metroLabel_MouseLeave);
             this.metroLabel2.MouseHover += new System.EventHandler(this.metroLabel_MouseHover);
             // 
-            // mpanenThuePhong
-            // 
-            this.mpanenThuePhong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mpanenThuePhong.HorizontalScrollbarBarColor = true;
-            this.mpanenThuePhong.HorizontalScrollbarHighlightOnWheel = false;
-            this.mpanenThuePhong.HorizontalScrollbarSize = 10;
-            this.mpanenThuePhong.Location = new System.Drawing.Point(348, 3);
-            this.mpanenThuePhong.Name = "mpanenThuePhong";
-            this.mpanenThuePhong.Size = new System.Drawing.Size(800, 560);
-            this.mpanenThuePhong.TabIndex = 3;
-            this.mpanenThuePhong.VerticalScrollbarBarColor = true;
-            this.mpanenThuePhong.VerticalScrollbarHighlightOnWheel = false;
-            this.mpanenThuePhong.VerticalScrollbarSize = 10;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::GUI.Properties.Resources.traphong;
-            this.pictureBox3.Location = new System.Drawing.Point(10, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox_Click);
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox_MouseLeave);
-            this.pictureBox3.MouseHover += new System.EventHandler(this.pictureBox_MouseHover);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GUI.Properties.Resources.khachhang;
@@ -254,31 +267,21 @@
             this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox_MouseLeave);
             this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox_MouseHover);
             // 
-            // pictureBox1
+            // mpanenThuePhong
             // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.traphong;
-            this.pictureBox1.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnTroVe
-            // 
-            this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnTroVe.Image = global::GUI.Properties.Resources.thoat1;
-            this.btnTroVe.InitialImage = global::GUI.Properties.Resources.nhanvien;
-            this.btnTroVe.Location = new System.Drawing.Point(1075, 3);
-            this.btnTroVe.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
-            this.btnTroVe.Name = "btnTroVe";
-            this.btnTroVe.Size = new System.Drawing.Size(73, 44);
-            this.btnTroVe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnTroVe.TabIndex = 3;
-            this.btnTroVe.TabStop = false;
-            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
+            this.mpanenThuePhong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mpanenThuePhong.HorizontalScrollbarBarColor = true;
+            this.mpanenThuePhong.HorizontalScrollbarHighlightOnWheel = false;
+            this.mpanenThuePhong.HorizontalScrollbarSize = 10;
+            this.mpanenThuePhong.Location = new System.Drawing.Point(233, 3);
+            this.mpanenThuePhong.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.mpanenThuePhong.Name = "mpanenThuePhong";
+            this.mpanenThuePhong.Size = new System.Drawing.Size(918, 560);
+            this.mpanenThuePhong.TabIndex = 3;
+            this.mpanenThuePhong.VerticalScrollbarBarColor = true;
+            this.mpanenThuePhong.VerticalScrollbarHighlightOnWheel = false;
+            this.mpanenThuePhong.VerticalScrollbarSize = 10;
+            this.mpanenThuePhong.Paint += new System.Windows.Forms.PaintEventHandler(this.mpanenThuePhong_Paint);
             // 
             // ThuePhong
             // 
@@ -292,16 +295,16 @@
             this.layoutNhanVien.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.mPanelMenu.ResumeLayout(false);
             this.btnQlPhongThue.ResumeLayout(false);
             this.btnQlPhongThue.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.btnQLLoaiPhong.ResumeLayout(false);
             this.btnQLLoaiPhong.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTroVe)).EndInit();
             this.ResumeLayout(false);
 
         }

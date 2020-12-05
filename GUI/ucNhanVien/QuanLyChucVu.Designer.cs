@@ -57,6 +57,7 @@
             this.metroPanel1.Controls.Add(this.pictureBox3);
             this.metroPanel1.Controls.Add(this.metroLabel2);
             this.metroPanel1.CustomBackground = true;
+            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
@@ -71,7 +72,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::GUI.Properties.Resources.chuc_vu;
-            this.pictureBox3.Location = new System.Drawing.Point(3, -6);
+            this.pictureBox3.Location = new System.Drawing.Point(3, -4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

@@ -115,7 +115,6 @@ namespace GUI.ucHoaDon
                         DanhSachHoaDon DanhSachHoaDon = new DanhSachHoaDon();
                         DanhSachHoaDon.Dock = DockStyle.Fill;
                         mpanelHoaDon.Controls.Add(DanhSachHoaDon);
-                        mpanelHoaDon.Controls["DanhSachHoaDon"].BringToFront();
 
                     }
                     break; ;

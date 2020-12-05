@@ -87,7 +87,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::GUI.Properties.Resources.sđichvu;
-            this.pictureBox4.Location = new System.Drawing.Point(0, -7);
+            this.pictureBox4.Location = new System.Drawing.Point(0, -3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
