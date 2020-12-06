@@ -76,8 +76,9 @@
             this.mpanelQlNvContent.HorizontalScrollbarHighlightOnWheel = false;
             this.mpanelQlNvContent.HorizontalScrollbarSize = 10;
             this.mpanelQlNvContent.Location = new System.Drawing.Point(201, 3);
+            this.mpanelQlNvContent.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.mpanelQlNvContent.Name = "mpanelQlNvContent";
-            this.mpanelQlNvContent.Size = new System.Drawing.Size(786, 496);
+            this.mpanelQlNvContent.Size = new System.Drawing.Size(789, 496);
             this.mpanelQlNvContent.TabIndex = 2;
             this.mpanelQlNvContent.VerticalScrollbarBarColor = true;
             this.mpanelQlNvContent.VerticalScrollbarHighlightOnWheel = false;
@@ -93,9 +94,10 @@
             this.mPanelMenu.HorizontalScrollbarBarColor = true;
             this.mPanelMenu.HorizontalScrollbarHighlightOnWheel = false;
             this.mPanelMenu.HorizontalScrollbarSize = 10;
-            this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
+            this.mPanelMenu.Location = new System.Drawing.Point(0, 3);
+            this.mPanelMenu.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(192, 496);
+            this.mPanelMenu.Size = new System.Drawing.Size(195, 496);
             this.mPanelMenu.TabIndex = 1;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;

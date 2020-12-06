@@ -143,10 +143,10 @@
             this.mpanelHoaDon.HorizontalScrollbarBarColor = true;
             this.mpanelHoaDon.HorizontalScrollbarHighlightOnWheel = false;
             this.mpanelHoaDon.HorizontalScrollbarSize = 10;
-            this.mpanelHoaDon.Location = new System.Drawing.Point(210, 0);
-            this.mpanelHoaDon.Margin = new System.Windows.Forms.Padding(0);
+            this.mpanelHoaDon.Location = new System.Drawing.Point(213, 3);
+            this.mpanelHoaDon.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.mpanelHoaDon.Name = "mpanelHoaDon";
-            this.mpanelHoaDon.Size = new System.Drawing.Size(841, 596);
+            this.mpanelHoaDon.Size = new System.Drawing.Size(838, 590);
             this.mpanelHoaDon.TabIndex = 5;
             this.mpanelHoaDon.VerticalScrollbarBarColor = true;
             this.mpanelHoaDon.VerticalScrollbarHighlightOnWheel = false;

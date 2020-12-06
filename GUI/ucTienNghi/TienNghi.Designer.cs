@@ -60,6 +60,7 @@
             this.layoutNhanVien.Controls.Add(this.btnTroVe, 2, 0);
             this.layoutNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.layoutNhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.layoutNhanVien.Name = "layoutNhanVien";
             this.layoutNhanVien.RowCount = 1;
             this.layoutNhanVien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -147,9 +148,10 @@
             this.mPanelMenu.HorizontalScrollbarBarColor = true;
             this.mPanelMenu.HorizontalScrollbarHighlightOnWheel = false;
             this.mPanelMenu.HorizontalScrollbarSize = 10;
-            this.mPanelMenu.Location = new System.Drawing.Point(3, 3);
+            this.mPanelMenu.Location = new System.Drawing.Point(0, 3);
+            this.mPanelMenu.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.mPanelMenu.Name = "mPanelMenu";
-            this.mPanelMenu.Size = new System.Drawing.Size(188, 527);
+            this.mPanelMenu.Size = new System.Drawing.Size(191, 527);
             this.mPanelMenu.TabIndex = 2;
             this.mPanelMenu.VerticalScrollbarBarColor = true;
             this.mPanelMenu.VerticalScrollbarHighlightOnWheel = false;
@@ -215,8 +217,9 @@
             this.mpanelQlTnContent.HorizontalScrollbarHighlightOnWheel = false;
             this.mpanelQlTnContent.HorizontalScrollbarSize = 10;
             this.mpanelQlTnContent.Location = new System.Drawing.Point(197, 3);
+            this.mpanelQlTnContent.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.mpanelQlTnContent.Name = "mpanelQlTnContent";
-            this.mpanelQlTnContent.Size = new System.Drawing.Size(773, 527);
+            this.mpanelQlTnContent.Size = new System.Drawing.Size(776, 527);
             this.mpanelQlTnContent.TabIndex = 3;
             this.mpanelQlTnContent.VerticalScrollbarBarColor = true;
             this.mpanelQlTnContent.VerticalScrollbarHighlightOnWheel = false;
