@@ -26,8 +26,9 @@ namespace GUI.ucHeThong
 
                 frmMain.frmMain_.MetroContainer.Controls.Add(ucManHinhChinh);
                 frmMain.frmMain_.MetroContainer.Controls["ucManHinhChinh"].BringToFront();
-
-                foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<ucDangNhap>())
+                frmMain.taikhoan = txtTaiKhoan.Text;
+                frmMain.matkhau = txtMatKhau.Text;
+            foreach (var item in frmMain.frmMain_.MetroContainer.Controls.OfType<ucDangNhap>())
                 {
                     frmMain.frmMain_.MetroContainer.Controls.Remove(item);
                 }

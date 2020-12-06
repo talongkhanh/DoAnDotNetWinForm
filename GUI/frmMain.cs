@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 using MetroFramework.Controls;
 using GUI.ucHeThong;
 
@@ -26,6 +27,9 @@ namespace GUI
                 return _frmMain;
             }
         }
+        public static string taikhoan { get; set; }
+        public static string matkhau { get; set; }
+        
 
         public MetroPanel MetroContainer
         {
