@@ -86,13 +86,26 @@ namespace GUI.ucNhanVien
             }
             catch
             {
-
                 MessageBox.Show("Có lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            int dong; dong = e.RowIndex;
+            txtMaNhanVien.Text = dataGridView1.Rows[dong].Cells[0].Value.ToString();
+            txtTenNhanVien.Text = dataGridView1.Rows[dong].Cells[2].Value.ToString().ToLower();
+            dtNgaySinh.Text = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+            string gt = dataGridView1.Rows[dong].Cells[2].Value.ToString().ToLower();
+            if (gt.IndexOf("nam") == 0)
+            {
+                radNam.Checked = true;
+            } else
+            {
+                radNu.Checked = true;
+            }
+            txtQueQuan.Text = dataGridView1.Rows[dong].Cells[4].Value.ToString();
+            metroComboBox1.Text = dataGridView1.Rows[dong].Cells[5].Value.ToString();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
